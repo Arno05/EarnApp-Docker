@@ -37,14 +37,14 @@ jobs:
       - name: Build & Push - Latest Regular
         run: |
           docker buildx build --push \
-          -t fazalfarhan01/earnapp:latest \
-          -t fazalfarhan01/earnapp:$(cat ./version) \
+          -t arno05/earnapp:latest \
+          -t arno05/earnapp:$(cat ./version) \
           --platform linux/amd64,linux/arm/v7,linux/arm64 build/app
       - name: Build & Push - Latest Lite
         run: |
           docker buildx build --push \
-          -t fazalfarhan01/earnapp:lite \
-          -t fazalfarhan01/earnapp:lite-$(cat ./version) \
+          -t arno05/earnapp:lite \
+          -t arno05/earnapp:lite-$(cat ./version) \
           --platform linux/amd64,linux/arm/v7,linux/arm64 build/lite
 
       - name: Update Docker Hub Readme
