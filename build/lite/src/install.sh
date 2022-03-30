@@ -15,5 +15,5 @@ chmod a+wr /etc/earnapp/
 touch /etc/earnapp/status
 chmod a+wr /etc/earnapp/status
 printf $EARNAPP_UUID > /etc/earnapp/uuid
-earnapp --verbose start
-earnapp --verbose run
+earnapp start
+earnapp run
