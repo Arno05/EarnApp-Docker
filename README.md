@@ -3,7 +3,7 @@
 
 ## Clone
 ```BASH
-git clone https://github.com/fazalfarhan01/earnapp_docker.git
+git clone https://github.com/arno05/earnapp_docker.git
 ```
 
 ## Available Tags
