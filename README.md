@@ -8,8 +8,7 @@ git clone https://github.com/arno05/earnapp_docker.git
 
 ## Available Tags
 1. `latest` - Built and updated daily
-2. `hourly-latest` - Built and updated every hour at UTC 10th minute.
-3. `lite` - Use when you have problems with regular version.
+2. `lite` - Use when you have problems with regular version.
 **Note**: `lite` version cannot generate it's own UUID and the same has to be provided as an environment variable.
 
 ## How to:
@@ -57,6 +56,12 @@ services:
     ```
 
 ## Like my work?
+Consider donating.
+- BTC: 18qKaNx7MAbKTNPDGJwNE2sjAZMC9YQDQp
+- ETH: 0xf31a4dfe1e6fa8bedc3b1ba49acc64ea1e8b04cf
+- XMR: 87yRQ1ZXwtTgLQUY4k39f1BTtDwShFrusCqSVs7PmQyEA3NM8nUYYTiLXeG2S49xWeUdYq3Fq2g4hXFdSB8kaRapPcmQupm
+ 
+## Like original work from fazalfarhan01 ?
 Consider donating.
 - BTC: 1PdUFXmVUxy88NRPJ2RFuhyjUqMiJyZybR
 - ETH: 0x715810d3619b6831b3d4ff0465ec3523aceb20c6
