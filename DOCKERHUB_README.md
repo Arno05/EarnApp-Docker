@@ -4,7 +4,7 @@
 Note: This is an unofficial build and comes with no warranty of any kind what so ever.
 By using this image you also agree to BrightData's terms and conditions.
 
-[Source Code](https://github.com/arno05/earnapp_docker)
+[Source Code](https://github.com/Arno05/EarnApp-Docker)
 
 ### Also works on ARM64 processors and Docker on Windows/WSL 
 
