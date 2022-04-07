@@ -3,6 +3,7 @@
 
 Note: This is an unofficial build and comes with no warranty of any kind what so ever.
 By using this image you also agree to BrightData's terms and conditions.
+This is a fork of excellent work from [fazalfarhan01](https://github.com/fazalfarhan01/EarnApp-Docker)
 
 [Source Code](https://github.com/Arno05/EarnApp-Docker)
 
@@ -61,7 +62,7 @@ Consider donating.
 - ETH: 0xf31a4dfe1e6fa8bedc3b1ba49acc64ea1e8b04cf
 - XMR: 87yRQ1ZXwtTgLQUY4k39f1BTtDwShFrusCqSVs7PmQyEA3NM8nUYYTiLXeG2S49xWeUdYq3Fq2g4hXFdSB8kaRapPcmQupm
 - 
-## Like my work?
+## Like fazalfarhan01 work?
 Consider donating.
 - BTC: 1PdUFXmVUxy88NRPJ2RFuhyjUqMiJyZybR
 - ETH: 0x715810d3619b6831b3d4ff0465ec3523aceb20c6
