@@ -1,26 +1,23 @@
 # EarnApp Docker
-### Docker Image for [EarnApp](https://earnapp.com)
-[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=bbb533f6add9&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+### Docker Image for [EarnApp](https://earnapp.com/i/yr4dnbd)
 
 Note: This is an unofficial build and comes with no warranty of any kind what so ever.
 By using this image you also agree to BrightData's terms and conditions.
 
-
-[Source Code](https://github.com/fazalfarhan01/earnapp_docker)
+[Source Code](https://github.com/arno05/earnapp_docker)
 
 ### Also works on ARM64 processors and Docker on Windows/WSL 
 
 ## Available Tags
 1. `latest` - Built and updated daily
-2. `hourly-latest` - Built and updated every hour at UTC 10th minute.
-3. `lite` - A non-systemd image. (An already existing UUID is needed for this image.)
+2. `lite` - A non-systemd image. (An already existing UUID is needed for this image.)
 
 ## How to:
 ### _Non Compose_
 1. Make a directory for earnapp data
     - `mkdir $HOME/earnapp-data`
 2. Run the container
-    - `docker run -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v $HOME/earnapp-data:/etc/earnapp --name earnapp fazalfarhan01/earnapp`
+    - `docker run -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v $HOME/earnapp-data:/etc/earnapp --name earnapp arno05/earnapp`
 3. Get the UUID
     - `docker exec -it earnapp earnapp showid`
 4. Copy and paste the app `UUID` in the [EarnApp Dashboard](https://earnapp.com/dashboard) 
@@ -31,7 +28,7 @@ By using this image you also agree to BrightData's terms and conditions.
 version: "3.3"
 services:
     app:
-        image: fazalfarhan01/earnapp
+        image: arno05/earnapp
         privileged: true
         volumes:
             - /sys/fs/cgroup:/sys/fs/cgroup:ro
@@ -45,7 +42,7 @@ Use the `lite` version if you don't want to run the container priviledged or hav
 version: "3.3"
 services:
     app:
-        image: fazalfarhan01/earnapp:lite
+        image: arno05/earnapp:lite
         volumes:
             - ./etc:/etc/earnapp
         environment:
@@ -58,7 +55,12 @@ services:
     ```BASH
     docker-compose exec app earnapp <YOUR COMMAND GOES HERE>
     ```
-
+## Like my work?
+Consider donating.
+- BTC: 18qKaNx7MAbKTNPDGJwNE2sjAZMC9YQDQp
+- ETH: 0xf31a4dfe1e6fa8bedc3b1ba49acc64ea1e8b04cf
+- XMR: 87yRQ1ZXwtTgLQUY4k39f1BTtDwShFrusCqSVs7PmQyEA3NM8nUYYTiLXeG2S49xWeUdYq3Fq2g4hXFdSB8kaRapPcmQupm
+- 
 ## Like my work?
 Consider donating.
 - BTC: 1PdUFXmVUxy88NRPJ2RFuhyjUqMiJyZybR
