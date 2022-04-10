@@ -24,4 +24,4 @@ VOLUME [ "/etc/earnapp" ]
 
 CMD ["install"]
 
-HEALTHCHECK --interval=1m --timeout=10s --start-period=10s --retries=2 CMD myip && cat /etc/earnapp/status | grep enabled && exit 0 || exit 1
+HEALTHCHECK --interval=5m --timeout=20s --start-period=20s --retries=1 CMD myip && cat /etc/earnapp/status | grep enabled && exit 0 || exit 1
