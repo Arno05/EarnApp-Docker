@@ -8,8 +8,7 @@ echo "
 ╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░░░░  ╚═════╝░░╚════╝░░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
 An image by https://github.com/fazalfarhan01
 "
-echo "Installing"
-sleep 2
+echo "====== Installing ======"
 cp /download/earnapp /usr/bin/earnapp
 chmod a+wr /etc/earnapp/
 touch /etc/earnapp/status
