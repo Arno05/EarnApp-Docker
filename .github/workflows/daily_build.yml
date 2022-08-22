@@ -25,9 +25,15 @@ jobs:
           DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
         run: |
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-
+      
+      - name: Get Installer
+        run: wget -qO- https://brightdata.com/static/earnapp/install.sh > ./earnapp.sh
+        
+      - name: Get version
+        run: grep VERSION ./earnapp.sh > ./version
+        
       - name: Download EarnApp
-        run: wget -cq https://brightdata.com/static/earnapp/bin_64 -O ./earnapp && chmod a+x ./earnapp
+        run: source ./version && wget -cq https://brightdata.com/static/earnapp-x64-$VERSION -O ./earnapp && chmod a+x ./earnapp
 
       - name: Get version
         run: echo $(./earnapp --version) > ./version
