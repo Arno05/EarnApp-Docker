@@ -30,7 +30,7 @@ jobs:
         run: wget -qO- https://brightdata.com/static/earnapp/install.sh > ./earnapp.sh
         
       - name: Get version
-        run: grep VERSION ./earnapp.sh > ./version
+        run: grep VERSION= ./earnapp.sh > ./version
         
       - name: Download EarnApp
         run: source ./version && wget -cq https://brightdata.com/static/earnapp-x64-$VERSION -O ./earnapp && chmod a+x ./earnapp
